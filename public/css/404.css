@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('./webfonts/Consolas.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #4c728f;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 750px;
+    padding: 0 15px;
+    background-color: #286090;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: aliceblue;
+    justify-content: space-around;
+    filter: drop-shadow(0 0 6.5px rgba(0, 0, 0, 0.45));
+}
+
+.text-center {
+    font-family: 'Consolas', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Consolas', 'Trebuchet MS', sans-serif;
+}
+
+.link-button {
+    width: 50%;
+    height: 50px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 20px;
+    color: #286090;
+    font-family: 'Consolas', 'Trebuchet MS', sans-serif;
+}
+
+.link-button:hover {
+    background-color: #4c728f;
+    border: 1px solid #4c728f;
+    color: aliceblue;
+}

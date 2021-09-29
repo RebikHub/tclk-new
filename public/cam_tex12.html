@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ООО 'Телеком' г. Ленинск-Кузнецкий, Кабельное ТВ, Интернет и Видеонаблюдение">
+    <meta name="keywords" content="интернет, кабельное, цифровое, тв, телевидение, ленинск-кузнецкий, телеком" />
+    <meta name="yandex-verification" content="db507915206a953d" />
+    <meta name="google-site-verification" content="XB8dDGhE-csGsaolMn-Kl2ojUXwKlyMLgQtQJAXhHz4" />
+    <title>ООО "Телеком" г.Ленинск-Кузнецкий</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav_container">
+                <ul class="nav_list">
+                    <li class="nav-item-head">
+                        <a href="web-cams.html" class="nav-link nav-link-cam">камеры города</a>
+                    </li>
+                    <li class="nav-item-head">
+                        <a href="http://client.tclk.ru/" class="nav-link nav-link-cab">личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar">
+            <div class="navbar_conteiner">
+                <ul class="navbar_list">
+                    <li class="nav-item">
+                        <a class="nav-links" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-links" href="tv.html">Телевидение</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-links" href="internet.html">Интернет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-links" href="cctv.html">Видеонаблюдение</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-links" href="http://client.tclk.ru/">Оплатить</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    8(38456)3-60-00<br>Служба поддержки
+                </span>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container content-block">
+        <div class="d-flex justify-content-center" id="webmcams">
+            <video id="video" class="video-js vjs-default-skin" controls autoplay preload="auto" width="720" height="405">
+                </video>
+        </div>
+        <div class="container content-block  d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                    <a href="web-cams.html"><button class="btn btn-blue">проспект Ленина</button></a>
+                    <a href="cam_tex12.html"><button class="btn btn-blue">аллея Туснолобовой</button></a>
+                    <a href="cam_maz.html"><button class="btn btn-blue">площадь Мазикина</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_company">
+                <h5 class="footer-titles">Компания</h5>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="footer-links">Лицензии</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="footer-links">Адреса и контакты</a>
+                    </li>
+                    <li>
+                        <a href="detail.html" class="footer-links">Информация</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_services">
+                <h5 class="footer-titles">Услуги</h5>
+                <ul class="footer-list">
+                    <li>
+                        <a href="tv.html" class="footer-links">Телевидение</a>
+                    </li>
+                    <li>
+                        <a href="internet.html" class="footer-links">Доступ в Интернет</a>
+                    </li>
+                    <li>
+                        <a href="cctv.html" class="footer-links">Видеонаблюдение</a>
+                    </li>
+                    <li>
+                        <a href="hardware.html" class="footer-links">Оборудование</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_abons">
+                <h5 class="footer-titles">Абонентам</h5>
+                <ul class="footer-list">
+                    <li>
+                        <a href="http://client.tclk.ru" class="footer-links">Личный кабинет</a>
+                    </li>
+                    <li>
+                        <a href="payments.html" class="footer-links">Способы оплаты</a>
+                    </li>
+                    <li>
+                        <a href="docs.html" class="footer-links">Инструкции</a>
+                    </li>
+                    <li>
+                        <a href="files/contract.pdf" class="footer-links">Договор на оказание услуг</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-tech">
+                <h5 class="footer-titles">Служба поддержки</h5>
+                Телефоны <br> 8 (38456) 3-60-00 <br> 8-800-500-2355 <br> Режим работы <br> 9:00 - 22:00 (Будни) <br> 10:00 - 21:00 (Выходные) <br>
+            </div>
+        </div>
+        <span class="footer_text">TELECOM 2021</span>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        if (Hls.isSupported()) {
+            var video = document.getElementById('video');
+            var hls = new Hls();
+            hls.loadSource('https://cams.tclk.ru/cam2/stream.m3u8');
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                video.play();
+            });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = 'https://cams.tclk.ru/cam2/stream.m3u8';
+            video.addEventListener('canplay', function() {
+                video.play();
+            });
+        }
+    </script>
+</body>
+
+</html>
